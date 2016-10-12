@@ -1,7 +1,7 @@
 $(document).ready(function($) {
 
-     $('#tabs3').tabulous({
-    	effect: 'slideLeft'
+     $('#tabs').tabulous({
+    	effect: 'scale'
     });
 
 
