@@ -1,26 +1,19 @@
 $(document).ready(function($) {
 
-     $('#tabs3').tabulous({
-    	effect: 'slideLeft'
+
+    $('#tab_block').easytabs({
+    	animate: "fast"
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    })
 
 
 
