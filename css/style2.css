@@ -120,7 +120,12 @@ a.active {
     color: #555;
     margin: 0 0 1em;
 }
-
+.owl-stage{
+	/*width: 100% !important;*/
+}
+.owl-item{
+	/*width: 100% !important;*/
+}
 .owl-item .item {
     position: relative;
     /*min-height: 500px;*/
@@ -152,7 +157,15 @@ a.active {
     width: 5% !important;
     display: inline-block;
 }
-
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+}
 @media screen and (max-width: 800px) {
     #tabs_container img {
         width: 80%;
