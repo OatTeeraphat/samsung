@@ -174,10 +174,6 @@ p {
 	transform-origin: 50% 50%;
 }
 
-.tabulous_active {
-	background: white !important;
-	color: #655c89 !important;
-}
 
 .tabulousclear {
 	display: block;
