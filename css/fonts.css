@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'k_bold';
+    src: url('../fonts/kittithada_bold-webfont.eot');
+    src: url('../fonts/kittithada_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kittithada_bold-webfont.woff2') format('woff2'),
+         url('../fonts/kittithada_bold-webfont.woff') format('woff'),
+         url('../fonts/kittithada_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'k_med';
+    src: url('../fonts/kit55p-webfont.eot');
+    src: url('../fonts/kit55p-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kit55p-webfont.woff2') format('woff2'),
+         url('../fonts/kit55p-webfont.woff') format('woff'),
+         url('../fonts/kit55p-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'k_light';
+    src: url('../fonts/kittithada_light-webfont.eot');
+    src: url('../fonts/kittithada_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kittithada_light-webfont.woff2') format('woff2'),
+         url('../fonts/kittithada_light-webfont.woff') format('woff'),
+         url('../fonts/kittithada_light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
