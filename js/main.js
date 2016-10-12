@@ -17,6 +17,7 @@ $(document).ready(function($) {
     })
 
 
+
     $('#tab_block')
         .bind('easytabs:before', function() {
                 $owl.trigger('destroy.owl.carousel');
@@ -36,5 +37,6 @@ $(document).ready(function($) {
                 }
             });
         })
+
 
 });
