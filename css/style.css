@@ -136,8 +136,16 @@ h1 {
     color: #444;
     padding: 2px 7px;
     border-radius: 3px;
+    display: block;
+    float: left;
+    margin-right: 10px;
     font-size: 20px;
     transition: background-color 0.3s ease-out;
+}
+.btn{
+    display: inline-block;
+    width: 100%;
+    top: 0;
 }
 .content_block button:hover{
   	background: #666;
@@ -354,16 +362,17 @@ h1 {
  }
 
 .content_title_sub {
-	width: 90%;
+	width: 100%;
 	position: absolute;
-	bottom: 20%;
+	top:70%;
+    box-sizing: border-box;
 	padding-left: 7%;
 }
 .content_title_sub h1{
 	font-size: 40px;
 }
 .content_title_sub p{
-	font-size: 32px;
+	font-size: 25px;
 	margin: 0;
 	font-family: k_light;
 	line-height: 25px;
@@ -376,41 +385,37 @@ h1 {
 }
 .sub i {
     float: left;
-    padding-bottom: 15%;
+    padding-bottom: 60px;
     margin-right: 5%;
     color: #555;
 }
 
 
 
-
-
-
-
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1000px) {
     .visible-md{
         display: none !important;
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1000px) {
     .hidden-md{
         display: none !important;
     }
 
     .section_col_2-left .content_title {
-    	width :40%;
-    	padding: 3%;
+    	width: 50%;
+    	padding: 7%;
     	z-index : 5;
     }    
 	.section_col_2-left .content_block h1 {
-    	font-size : 45px;
-	}
+    	font-size: 35px;
+    	line-height: 27px;
+ }
 
     .section_col_2-left .content_title p {
-        font-size: 28px;
-        line-height: 23px;
+        font-size: 22px;
+        line-height: 20px;
         margin: 10px 0;
     }
 
@@ -418,7 +423,7 @@ h1 {
     	width: 100%;
     	padding: 3%;
     	z-index : 5;
-    }    
+    }
 	.section_col_2-right .content_block h1 {
     	font-size : 45px;
 	}
@@ -428,11 +433,55 @@ h1 {
         line-height: 23px;
         margin: 10px 0;
     }
+    .home_hub {
+		background: url(../images/h-bg-sh.png);
+		background-position: 10% top;
+		background-size: 150%;
+		padding-top: 5%;
+    }
+    .content_title_sub {
+        width: 100%;
+        position: absolute;
+        top:70%;
+        box-sizing: border-box;
+        padding-left: 7%;
+    }
+    .content_title_sub h1{
+        font-size: 30px;
+    }
+    .content_title_sub p{
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .sub {
+        float: left;
+        margin-right: ;
+        width: 180px;
+    }
+    .sub i {
+        float: left;
+        padding-bottom: 60px;
+        margin-right: 5%;
+        color: #555;
+    }
 }
 
+@media screen and (max-width: 680px) {
+    .content_title_sub {
+        top: 77.5%;
+    }
 
-
-
+    .content_title_sub h1{
+        font-size: 24px;
+    }
+    .content_title_sub p{
+        font-size: 16px;
+        line-height: 14px;
+    }
+    .sub {
+        width: 160px;
+    }
+}
 
 @media screen and (min-width: 551px) {
     .visible-xs{
@@ -545,6 +594,66 @@ h1 {
     .section_left-center-mobile .content_img img{
         width : 100%;
         }
+
+    .content_title_coll > input {
+      display: none;
+      visibility: hidden;
+    }
+    .content_title_coll > label {
+      display: block;
+      padding: 0.5em;
+      text-align: right;
+      border-bottom: 1px solid #CCC;
+      color: #666;
+    }
+    .content_title_coll > label:hover {
+      color: #000;
+    }
+    .content_title_coll h1{
+        font-size: 24px;
+    }
+    .content_title_coll p{
+        font-size: 16px;
+        line-height: 14px;
+    }
+    .sub {
+        width: 100%;
+    }
+    .sub-coll {
+        padding: 10px 0;
+    }
+}
+    .content_title_coll > label::before {
+      font-family: inherit;
+      font-size: 25px;
+      font-weight: bold;
+      content: "+";
+      vertical-align: text-top;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 3px;
+      color: #fff;
+      border-radius: 5px;
+      background:#555;
+    }
+    .content_title_coll p{
+        color: #555;
+    }
+    #expand {
+      height: 250px;
+      overflow: hidden;
+      transition: height 0.5s;
+      background: transparent;
+      color: #FFF;
+      padding: 0 20px;
+    }
+    #toggle:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle:checked ~ label::before {
+      content: "-";
+    }
 
     .home_main{
 		background-position: center 90%;
