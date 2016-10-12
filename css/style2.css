@@ -120,12 +120,20 @@ a.active {
     margin: 0 0 1em;
 }
 
+.owl-stage{
+	/*width: 100% !important;*/
+}
+.owl-item{
+	/*width: 100% !important;*/
+}
+
 .tab_center img {
     width: 30%;
 }
 .tab_center p {
     color : #fff;
 }
+
 
 .owl-item .item {
     position: relative;
@@ -159,6 +167,17 @@ a.active {
     display: inline-block;
 }
 
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
+-webkit-transform: translate3d(0,0,0);
+-moz-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+}
+
+
 
 .tab_single-remote {
     background: radial-gradient(ellipse at center, #004b75 0%,#000000 100%);
@@ -166,6 +185,7 @@ a.active {
     background: -webkit-radial-gradient(center, ellipse cover, #004b75 0%,#000000 100%);
     filter: none;
  }
+
 
 @media screen and (max-width: 800px) {
     #tabs_container img {
