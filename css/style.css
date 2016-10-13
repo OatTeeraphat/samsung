@@ -401,9 +401,8 @@ h1 {
  }
  .page_app {
  	background: url(../images/page-app.jpg);
- 	background-size: 100%;
- 	background-position: center top;
- 	color: #fff;
+    background-size: 100%;
+    background-position: center top;
  }
  .page_app .content_img {
  	padding: 45% 0;
@@ -425,6 +424,12 @@ h1 {
 	font-family: k_light;
 	line-height: 25px;
 }
+.content_title_sub-view{
+	
+width: 35%;
+	
+top: 47%;
+}
 
 .sub {
 	float: left;
@@ -436,34 +441,17 @@ h1 {
     margin: 2% 5% 0;
     color: #555;
 }
+.sub_view {width: 100% !important;}
 .fade{
     display: none;
 }
-.app-title {
-
+.page_view {
+    background: url(../images/page-view.jpg);
+    background-size: 120%;
+    background-position: center top;
 }
-.app-col-2{
-	width : 49%;
-	position : relative;
-	display: table-cell;
-	padding: 0 5%;
-	box-sizing: border-box;
-}
-.app-title{
-	font-size : 30px;
-}
-.app-col-2 img {
-	width : 90%;
-	padding : 3%;
-}
-.app-title-hightlight {
-	background : #999;
-	padding : 3px;
-	border-radius:7px;
-	text-align : center;
-}
-.page_app .content_title h1 {
-	color:#fff;
+.page_view .content_img{
+	padding: 65% 0;
 }
 
 
@@ -521,6 +509,11 @@ h1 {
         box-sizing: border-box;
         padding-left: 7%;
     }
+    .content_title_sub-view {
+    	width: 35%;
+    	top: 47% !important;
+    	padding-left: 5.5%;
+ }
     .content_title_sub h1{
         font-size: 28px;
     }
@@ -531,6 +524,9 @@ h1 {
     }
     .page_tv .content_title >img {
    		height: 60px;
+    }
+    .sub_view {
+    	height : 80px;
     }
 
 }
@@ -553,6 +549,12 @@ h1 {
     .sub {
         width: 30%;
     }
+    .sub_view {
+  		height: 70px;
+	}
+	.content_title_sub-view{
+		top:52% !important;
+	}
 
 }
 
@@ -612,6 +614,7 @@ h1 {
         font-size: 20px;
         line-height: 18px;
         margin: 5px 0;
+        color: #fff;
     }
     .section_col_2-right .content_block h1 {
         font-size : 30px;
@@ -714,33 +717,20 @@ h1 {
         bottom: 0;
     }
     .page_tv.section_col_2-left .content_title h1,p {
-    	color : #fff;
     }
     .page_tv.section_col_2-left .content_title h1 {
     	color : #fff;
     }
-    .page_app .content_img {
-		padding: 32%;
-		}
-    .page_app {
-		background-size: 175%;
-		background-position: right top;
-	}
-	.app-title{
-		color : #000;
-		font-size : 22px;
-		text-align: left !important;
-	}
-	.app-col-2{
-		width : 100%;
-		padding: 0 30px;
-		box-sizing : border-box;
-		position : relative;
-		display: block;
-		float : inherit;
-	}
-	.app-col-2 img{
-		width : 100%;
-		padding: 0;
-	}
+    .page_view .content_img {
+    	padding:70px 0;
+    }
+    .page_view {
+    	background-repeat : no-repeat;
+    	background-size : 150% ;
+    	background-position : 70% 80%;
+    }
+    .page_view .content_title p {
+		color:#000;
+    }
+
 }
