@@ -399,6 +399,15 @@ h1 {
  .page_tv .content_title_sub i {
  	color : #fff;
  }
+ .page_app {
+ 	background: url(../images/page-app.jpg);
+ 	background-size: 100%;
+ 	background-position: center top;
+ 	color: #fff;
+ }
+ .page_app .content_img {
+ 	padding: 45% 0;
+ }
 
 .content_title_sub {
 	width: 100%;
@@ -429,6 +438,32 @@ h1 {
 }
 .fade{
     display: none;
+}
+.app-title {
+
+}
+.app-col-2{
+	width : 49%;
+	position : relative;
+	display: table-cell;
+	padding: 0 5%;
+	box-sizing: border-box;
+}
+.app-title{
+	font-size : 30px;
+}
+.app-col-2 img {
+	width : 90%;
+	padding : 3%;
+}
+.app-title-hightlight {
+	background : #999;
+	padding : 3px;
+	border-radius:7px;
+	text-align : center;
+}
+.page_app .content_title h1 {
+	color:#fff;
 }
 
 
@@ -564,7 +599,7 @@ h1 {
 		padding: 3%;
 		z-index : 5;
 		height: auto;
-		bottom: -25px;
+		bottom: 10px;
 	}
 	.section_col_2-left .content_block h1 {
     	font-size: 32px;
@@ -684,5 +719,28 @@ h1 {
     .page_tv.section_col_2-left .content_title h1 {
     	color : #fff;
     }
-
+    .page_app .content_img {
+		padding: 32%;
+		}
+    .page_app {
+		background-size: 175%;
+		background-position: right top;
+	}
+	.app-title{
+		color : #000;
+		font-size : 22px;
+		text-align: left !important;
+	}
+	.app-col-2{
+		width : 100%;
+		padding: 0 30px;
+		box-sizing : border-box;
+		position : relative;
+		display: block;
+		float : inherit;
+	}
+	.app-col-2 img{
+		width : 100%;
+		padding: 0;
+	}
 }
