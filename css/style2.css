@@ -205,8 +205,9 @@ a.active {
     ul.tab-nav {
         padding: 10px;
         top: -4.25rem;
+        min-width : 200px;
     }
-
+    
     .tab-nav li a{
         padding: 5px 20px;
         font-size: 22px;
@@ -223,6 +224,7 @@ a.active {
     }
     ul.tab-nav {
         top: -3.75rem;
+        padding: 5px;
     }
 
 }
@@ -236,17 +238,9 @@ a.active {
     .hidden-block {
         display: none;
     }
-    .tab-title {
+    .tab_center .tab-title p {
         width: 100%;
         font-size: 35px;
-        text-align: center;
-        padding: 0 10px;
-        box-sizing: border-box;
-        line-height: 30px;
-    }
-    .tab-desc {
-        width: 100%;
-        font-size: 23px;
         text-align: center;
         padding: 0 10px;
         box-sizing: border-box;
@@ -256,6 +250,54 @@ a.active {
         width: 100%;
         text-align: center;
     }
+       .content_title_coll > input {
+        display: none;
+        visibility: hidden;
+    }
+    .content_title_coll > label {
+        display: block;
+        padding: 0.5em;
+        text-align: right;
+        color: #555;
+    }
+    .content_title_coll > label:focus {
+        color: red;
+    }
+    .content_title_coll h1{
+        font-size: 24px;
+    }
+    .content_title_coll p{
+        font-size: 22px;
+        line-height: 18px;
+        margin: 0;
+    }
+
+   .content_title_coll p{
+        color: #555;
+    }
+    #expand {
+      height: 170px;
+      overflow: hidden;
+      transition: height 0.5s;
+      background: transparent;
+      color: #FFF;
+      padding: 0 20px;
+    }
+    #toggle:checked ~ #expand {
+      height: 0px;
+    }
+    #toggle:checked ~ label::before {
+    }
+    .page_hub.sub {
+        width: 100%;
+    }
+    .page_hub.sub i {
+        padding-bottom: 12% !important;
+    }
+    .page_hub .content_img {
+        
+    }
+
 
 }
 
