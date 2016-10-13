@@ -13,11 +13,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="./js/jquery.hashchange.min.js" type="text/javascript"></script>
     <script src="./js/jquery.easytabs.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel='stylesheet' href='css/owl.carousel.css'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel='stylesheet' href='./css/owl.carousel.css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <title>Sumsung</title>
 </head>
@@ -39,13 +39,15 @@
     </div>
         <section class="section_col_2-left page-main page_hub" id="smart_hub">
         <div class="content_block">
+            <div class="content_img visible-xs">
+                <img src="./images/smart_hub.png" alt="">
+            </div>
             <div class="content_title">
                 <h1>SMART HUB<br><span>รีโมทเดียวเอาอยู่!</span></h1>
                 <p>ควบคุมอุปกรณ์เชื่อมต่อทั้งหมด<br>ได้อย่างง่ายดาย</p>
                 <button>รุ่นที่มี Smart View</button>
             </div>
-            <div class="content_img">
-                
+            <div class="content_img hidden-xs">
             </div>
         </div>
         <div class="content_title_sub hidden-xs">
@@ -82,7 +84,7 @@
                     <p>เชื่อมต่อกับอุปกรณ์อัตโนมัติ<br>บนหน้าจอ Smart Hub</p></p>
                 </div>
                 <div class="sub">
-                    <i class="fa fa-search fa-2x"></i>
+                    <i class="fa fa-spinner fa-2x"></i>
                     <h1>Fast TV Booting</h1>
                     <p>> เชื่อมต่อกับอุปกรณ์อัตโนมัติ </p>
                     <p>> บนหน้าจอ Smart Hub</p>
@@ -92,26 +94,26 @@
         </div>
     </section>
 
-    <section class="section_tab" id="smart_hub">
-        <div id="tab_block" class="tab_container">
+    <section class="section_tab tab_hub" id="smart_hub">
+        <div id="tab_block" class="tab_container hidden-block">
             <ul class='tab-nav'>
                 <li ><a href="#tab-1">New smart Hub 2016</a></li>
                 <li ><a href="#tab-2">จัดเรียงแอพได้ดังใจ</a></li>
-                <li ><a href="#tab-3">test carousel</a></li>
+             <!--    <li ><a href="#tab-3">test carousel</a></li> -->
             </ul>
             <div id="tab-1">
                 <p class="tab-title">New smart Hub 2016</p>
-                <p class="tab-text_line">เชื่อมต่อกับอุปกรณ์อัตโนมัติ เชื่อมต่อกับอุปกรณ์อัตโนมัติเชื่อมต่อ</p>
-                <p class="tab-desc">จัดเรียงแอพได้ดังใจจัดเรียงแอพได้ดังใจ จัดเรียงแอพได้ดังใจ จัดเรียงแอพได้ดังใจ</p>
+                <p class="tab-text_line">ข้าถึงคอนเทนต์ต่างๆ ง่านขึ้น ควบคุม จัดการได้ในจอเดียว!</p>
+                <p class="tab-desc">แค่กดปุ่ม home ก็สามารถเข้าถึงทุกความบันเทิงใน Smart Hub ได้ทันที</p>
                 <img src="http://placehold.it/600x400" alt="">
+                <p class="tab-text_line">จัดการง่าย เข้าถึงได้ในจุดเดียว สะดวกขึ้น!</p>
             </div>
             <div id="tab-2">
-                <p class="tab-title">(2) New smart Hub 2016</p>
-                <p class="tab-text_line">เชื่อมต่อกับอุปกรณ์อัตโนมัติ เชื่อมต่อกับอุปกรณ์อัตโนมัติเชื่อมต่อ</p>
-                <p class="tab-desc">จัดเรียงแอพได้ดังใจจัดเรียงแอพได้ดังใจ จัดเรียงแอพได้ดังใจ จัดเรียงแอพได้ดังใจ</p>
+                <p class="tab-title">จัดการแอพฯ ได้ง่ายและรวดรวดเร็ว</p>
+                <p class="tab-text_line">วิธีเปลี่ยน-เพิ่ม-ลบ-ย้าย แอพฯ ใน Smart Hub</p>
                 <img src="http://placehold.it/600x400" alt="">
             </div>
-            <div id="tab-3">
+            <!-- <div id="tab-3">
                 <div class="owl-carousel">
                     <div class="item">
                         <p class="tab-title">11111</p>
@@ -126,8 +128,22 @@
                         <img src="http://placehold.it/600x400" alt="">
                     </div>
                 </div>
+            </div> -->
             </div>
-        </div>
+            <div class="visible-block">
+                <div class="tab_center" id="tab-1">
+                <p class="tab-title">New smart Hub 2016</p>
+                <p class="tab-text_line">ข้าถึงคอนเทนต์ต่างๆ ง่านขึ้น ควบคุม จัดการได้ในจอเดียว!</p>
+                <p class="tab-desc">แค่กดปุ่ม home ก็สามารถเข้าถึงทุกความบันเทิงใน Smart Hub ได้ทันที</p>
+                <img src="http://placehold.it/600x400" alt="">
+                <p class="tab-text_line">จัดการง่าย เข้าถึงได้ในจุดเดียว สะดวกขึ้น!</p>
+            </div>
+            <div class="tab_center" id="tab-2">
+                <p class="tab-title">จัดการแอพฯ ได้ง่ายและรวดรวดเร็ว</p>
+                <p class="tab-text_line">วิธีเปลี่ยน-เพิ่ม-ลบ-ย้าย แอพฯ ใน Smart Hub</p>
+                <img src="http://placehold.it/600x400" alt="">
+            </div>
+            </div>
         </div>
     </section>
     <div class="nav_footer">

@@ -59,16 +59,19 @@
     width: 100%;
 }
 
-.tab_container img {}
+.tab_container img {
+    margin: 10px 0;
+    width: 50%;
+}
 
 ul.tab-nav {
     position: absolute;
     min-width: 250px;
     left: 2%;
-    top: -5rem;
+    top: -4.5rem;
     z-index: 9;
     background: #fff;
-    padding: 15px;
+    padding: 10px;
     -webkit-box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.3);
@@ -87,7 +90,7 @@ ul.tab-nav {
     background: #fff;
     color: #555;
     font-size: 26px;
-    padding: 10px 30px;
+    padding: 5px 20px;
 }
 
 a.active {
@@ -98,6 +101,7 @@ a.active {
 .tab-title {
     font-family: k_bold;
     font-size: 45px;
+    line-height: 35px;
     margin: 0;
 }
 .tab-title i {
@@ -107,16 +111,17 @@ a.active {
 
 .tab-text_line {
     font-family: k_bold;
-    font-size: 38px;
+    font-size: 35px;
     color: #555;
-    margin: .2em 0 0em;
+    margin: 0;
 }
 
 .tab-desc {
     font-family: k_light;
-    font-size: 30px;
+    font-size: 27px;
+    line-height: 20px;
     color: #555;
-    margin: 0 0 1em;
+    margin: 0 0 1%;
 }
 
 .owl-stage {
@@ -132,7 +137,6 @@ a.active {
 }
 
 .tab_center p {
-    color: #fff;
 }
 
 .owl-item .item {
@@ -196,6 +200,19 @@ a.active {
     padding: 7% 0;
 }
 
+.tab_hub {
+    padding: 7% 0 2%;
+    background: url('../images/tab-bg-hub.jpg');
+    background-size: 120%;
+    background-position: center top;
+    margin-top: -5px;
+}
+
+.tab_hub .tab_center{
+    color:#000;
+}
+
+
 @media screen and (max-width: 1000px) {
     #tabs_container img {
         width: 80%;
@@ -234,6 +251,28 @@ a.active {
     .hidden-block {
         display: none;
     }
+    .tab-title {
+    font-size: 40px;
+    line-height: 27px;
+ }
+	.tab-title i {
+		font-size: 30px;
+	}
+
+
+	.tab-text_line {
+		font-size: 25px;
+		line-height: 22px;
+		padding: 5px 0;
+	}
+
+	.tab-desc {
+		font-family: k_light;
+		font-size: 20px;
+		line-height: 15px;
+		color: #555;
+		margin: 0 0 1%;
+	}
     .tab_center .tab-title p {
         width: 100%;
         font-size: 35px;
@@ -272,7 +311,7 @@ a.active {
         color: #555;
     }
     #expand {
-      height: 170px;
+      height: 250px;
       overflow: hidden;
       transition: height 0.5s;
       background: transparent;
@@ -291,9 +330,21 @@ a.active {
         padding-bottom: 12% !important;
     }
     .page_hub .content_img {
-        
     }
-
+    ul.tab-nav {
+        top: -3.0rem;
+        padding: 5px;
+        min-width: 160px;
+    }
+    ul.tab-nav a {
+        font-size: 18px;
+        padding: 3px 10px;
+    }
+    .tab_hub {
+        text-align : center;
+        background : inherit;
+        padding: 0 10px !important;
+    }
 
 }
 
@@ -434,6 +485,9 @@ a.active {
     .tv_channel .col-4 {
         display: inline-block;
         width: 48% !important;
+    }
+    .tab_hub {
+        padding: 7% 10px;
     }
 }
 

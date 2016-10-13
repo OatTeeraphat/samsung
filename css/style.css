@@ -382,6 +382,7 @@ h1 {
     top: 75%;
  }
 
+
 .content_title_sub {
 	width: 100%;
 	position: absolute;
@@ -494,11 +495,12 @@ h1 {
     .sub {
         width: 30%;
     }
+
 }
 
 @media screen and (min-width: 551px) {
     .visible-xs{
-        display: none;
+        display: none !important;
     }
 }
 
@@ -530,7 +532,7 @@ h1 {
 		padding-top : 5px;
 	}
 	.section_col_2-left .content_img img {
-		width: 90%;
+		width: 100%;
 		padding: 5% 0;
 	}
 	.section_col_2-left .content_title {
@@ -635,3 +637,12 @@ h1 {
 	.home_tvplus .content_img {
 		width : 20%;
     }
+    .page_hub{
+		background: inherit;
+	}
+	.page_hub .content_img {
+		 height: 140px;
+		 padding: 10% 0;
+		}
+
+}
