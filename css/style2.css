@@ -235,13 +235,15 @@ a.active {
 .tv_channel .col-4:first-child {
     vertical-align: middle;
 }
+
 .tv_channel .col-4:first-child::before {
-  content: " ";
-  display: inline-block;
-  height: 100%;
-  width: 1%;
-  vertical-align: middle;
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
 }
+
 .num_circle {
     font-family: k_med !important;
     font-size: 35px;
@@ -279,7 +281,7 @@ a.active {
     width: 100%;
     display: inline-block;
     text-align: left;
-        margin-bottom: .5em;
+    margin-bottom: .5em;
 }
 
 .channel-desc {
@@ -306,8 +308,39 @@ a.active {
     display: inline-block;
 }
 
+.text_center {
+    text-align: center;
+}
+
+.visible-sm {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .tv_channel .col-4:first-child {
+        display: block;
+        width: 100% !important;
+    }
+    .tv_channel .col-4 {
+        display: inline-block;
+        width: 48% !important;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    .visible-sm {
+        display: block;
+    }
     .col-4 {
         width: 100% !important;
+    }
+    .tv_channel .col-4 {
+        width: 100% !important;
+    }
+    .channel_item{
+    	text-align: center;
+    }
+    .channel-desc {
+    	text-align: left;
     }
 }
