@@ -222,6 +222,17 @@ a.active {
     background-position: center;
 }
 
+.text_med {
+    font-family: k_med !important;
+}
+
+.title_bold {
+    font-family: k_bold !important;
+    font-size: 32px;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
 .text_bold {
     font-family: k_bold !important;
 }
@@ -337,10 +348,10 @@ a.active {
     .tv_channel .col-4 {
         width: 100% !important;
     }
-    .channel_item{
-    	text-align: center;
+    .channel_item {
+        text-align: center;
     }
     .channel-desc {
-    	text-align: left;
+        text-align: left;
     }
 }
