@@ -59,9 +59,7 @@
     width: 100%;
 }
 
-.tab_container img {
-
-}
+.tab_container img {}
 
 ul.tab-nav {
     position: absolute;
@@ -121,20 +119,21 @@ a.active {
     margin: 0 0 1em;
 }
 
-.owl-stage{
-	/*width: 100% !important;*/
+.owl-stage {
+    /*width: 100% !important;*/
 }
-.owl-item{
-	/*width: 100% !important;*/
+
+.owl-item {
+    /*width: 100% !important;*/
 }
 
 .tab_center img {
     width: 30%;
 }
-.tab_center p {
-    color : #fff;
-}
 
+.tab_center p {
+    color: #fff;
+}
 
 .owl-item .item {
     position: relative;
@@ -168,23 +167,22 @@ a.active {
     display: inline-block;
 }
 
-.owl-carousel  .owl-wrapper,
-.owl-carousel  .owl-item{
--webkit-backface-visibility: hidden;
--moz-backface-visibility:    hidden;
--ms-backface-visibility:     hidden;
--webkit-transform: translate3d(0,0,0);
--moz-transform: translate3d(0,0,0);
--ms-transform: translate3d(0,0,0);
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
 }
 
-
-
 .tab_single-remote {
-    background: radial-gradient(ellipse at center, #004b75 0%,#000000 100%);
+    background: radial-gradient(ellipse at center, #004b75 0%, #000000 100%);
     background: -moz-radial-gradient(center, ellipse cover, #004b75 0%, #000000 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, #004b75 0%,#000000 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #004b75 0%, #000000 100%);
     filter: none;
+
  }
 
 .tab_full{
@@ -213,8 +211,6 @@ a.active {
         font-size: 22px;
     }
 }
-
-
 
 
 
@@ -320,5 +316,141 @@ a.active {
         width: 100%;
         height: auto;
         display: inline-block;
+    }
+}
+
+
+/*TV_CHANNEL ----------------------------*/
+
+.tv_channel .section_block.sec_top {
+    background: transparent;
+}
+
+.tv_channel .page-main {
+    background: url("https://unsplash.it/1200/850?image=47") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text_bold {
+    font-family: k_bold !important;
+}
+
+.col-4 {
+    width: 30% !important;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tv_channel .col-4:first-child {
+    vertical-align: middle;
+}
+
+.tv_channel .col-4:first-child::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+
+.num_circle {
+    font-family: k_med !important;
+    font-size: 35px;
+    padding: 12px;
+    color: #555;
+    background: #fff;
+    border: 2px solid #555;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 0 .1em;
+    text-align: center;
+}
+
+.num_circle.fluid {
+    color: #fff;
+    background: #555;
+}
+
+.num_circle.small {
+    font-size: 27px;
+    padding: 5px;
+}
+
+.text_caption {
+    font-family: k_med;
+    font-size: 25px;
+    color: #555;
+    margin: 0 0 1em;
+}
+
+.channel_item {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: .5em;
+}
+
+.channel-desc {
+    display: inline;
+    vertical-align: middle;
+}
+
+.channel-desc p {
+    font-family: k_light;
+    font-size: 32px;
+    color: #555;
+    margin: 0 0 .1em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+    margin: -8px 6px 0;
+}
+
+.channel-desc span {
+    font-family: k_light;
+    font-size: 22px;
+    color: #555;
+    margin: 0;
+    display: inline-block;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.visible-sm {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .tv_channel .col-4:first-child {
+        display: block;
+        width: 100% !important;
+    }
+    .tv_channel .col-4 {
+        display: inline-block;
+        width: 48% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .visible-sm {
+        display: block;
+    }
+    .col-4 {
+        width: 100% !important;
+    }
+    .tv_channel .col-4 {
+        width: 100% !important;
+    }
+    .channel_item{
+    	text-align: center;
+    }
+    .channel-desc {
+    	text-align: left;
     }
 }
