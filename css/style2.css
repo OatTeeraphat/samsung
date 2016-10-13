@@ -68,7 +68,7 @@ ul.tab-nav {
     position: absolute;
     min-width: 250px;
     left: 2%;
-    top: -4.5rem;
+    top: -4.75rem;
     z-index: 9;
     background: #fff;
     padding: 10px;
@@ -219,10 +219,9 @@ a.active {
     }
     ul.tab-nav {
         padding: 10px;
-        top: -4.25rem;
+        top: -4.5rem;
         min-width : 200px;
     }
-    
     .tab-nav li a{
         padding: 5px 20px;
         font-size: 22px;
@@ -295,9 +294,8 @@ a.active {
         text-align: right;
         color: #555;
     }
-    .content_title_coll > label:focus {
-        color: red;
-    }
+    .content_title_coll > label {
+}
     .content_title_coll h1{
         font-size: 24px;
     }
@@ -317,6 +315,9 @@ a.active {
       background: transparent;
       color: #FFF;
       padding: 0 20px;
+    }
+    .page_tv #expand {
+    background: black;
     }
     #toggle:checked ~ #expand {
       height: 0px;
@@ -378,9 +379,9 @@ a.active {
 }
 
 .tv_channel .page-main {
-    background: url("https://unsplash.it/1200/850?image=47") no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("../images/page-tv.jpg") no-repeat;
+    background-size: 105%;
+    background-position: center top;
 }
 
 .text_med {
