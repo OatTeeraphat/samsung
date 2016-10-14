@@ -1,5 +1,5 @@
 .sub i {
-    padding-bottom: 30%;
+    padding-bottom: 25%;
 }
 
 .section_block {
@@ -56,19 +56,20 @@
 }
 
 .tab_container div {
-    width: 100%;
 }
 
-.tab_container img {}
+.tab_container img {
+    width: 50%;
+}
 
 ul.tab-nav {
     position: absolute;
     min-width: 250px;
     left: 2%;
-    top: -5rem;
+    top: -4.75rem;
     z-index: 9;
     background: #fff;
-    padding: 15px;
+    padding: 10px;
     -webkit-box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.3);
@@ -87,17 +88,17 @@ ul.tab-nav {
     background: #fff;
     color: #555;
     font-size: 26px;
-    padding: 10px 30px;
+    padding: 5px 20px;
 }
 
 a.active {
     font-family: k_bold !important;
-    border-left: 4px solid #000;
 }
 
 .tab-title {
     font-family: k_bold;
     font-size: 45px;
+    line-height: 35px;
     margin: 0;
 }
 .tab-title i {
@@ -107,17 +108,28 @@ a.active {
 
 .tab-text_line {
     font-family: k_bold;
-    font-size: 38px;
+    font-size: 35px;
     color: #555;
-    margin: .2em 0 0em;
+    margin: 0;
 }
 
 .tab-desc {
     font-family: k_light;
-    font-size: 30px;
+    font-size: 27px;
+    line-height: 20px;
     color: #555;
-    margin: 0 0 1em;
+    margin: 0 0 1%;
 }
+
+.content-left{
+    text-align:left;
+    padding-top: 10% !important;
+}
+
+.content-left .tab-text_line{
+    font-size : 30px;
+}
+
 
 .owl-stage {
     /*width: 100% !important;*/
@@ -128,27 +140,26 @@ a.active {
 }
 
 .tab_center img {
-    width: 30%;
+    width: 40% !important;
 }
 
-.tab_center p {
-    color: #fff;
-}
+.tab_center p {text-align: center;}
 
 .owl-item .item {
     position: relative;
-    /*min-height: 500px;*/
+    max-height: 500px;
 }
 
 .owl-carousel .tab-title {
-    width: 48%;
     display: inline-block;
 }
 
 .owl-item .item img {
-    width: 48%;
     height: auto;
-    display: inline-block;
+    display: inline;
+}
+.owl-img_center{
+    width: 50% !important;
 }
 
 .owl-prev {
@@ -184,16 +195,88 @@ a.active {
     filter: none;
 
  }
+ .col-tab-1{
+     width : 90%;  
+ }
+ .col-tab-2{
+     width: 48% !important;
+     padding: 0 10px;
+     /* float: left; */
+     position: relative;
+ }
 
 .tab_full{
     padding: 0;
  }
 .tab_full img {
     width: 100%;
-    /* height: 100%; */
  }
 .tab_center{
     padding: 7% 0;
+}
+.tab_col-2 {
+    width: 49%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+}
+
+.tab_hub {
+    padding: 7% 0 3%;
+    background: url('../images/tab-bg-hub.jpg');
+    background-size: 120%;
+    background-position: center top;
+    margin-top: -5px;
+}
+
+.tab_hub .tab_center{
+    color:#000;
+}
+.tab_tv {
+    padding: 7% 0 3%;
+}
+.tab_app {
+    width: 100%;
+    box-sizing: border-box;
+}
+.tab-col-2-l{
+    width: 49% !important;
+    max-height: 500px;
+    display:inline-block;
+    vertical-align: top;
+    box-sizing:border-box;
+    padding: 3% 2% 3% 10%;
+}
+.tab-col-2-r{
+    width:49%;
+    display:inline-block;
+    vertical-align:top;
+    box-sizing:border-box;
+    padding: 3% 10% 5% 2%;
+}
+.tab-col-2-l,.tab-col-2-r{
+    padding-top :0;
+}
+.tab-content{
+    width: 100% !important;
+    padding: 0;
+}
+.tab-content img{
+    width:100%;
+}
+.app-title{
+    font-size:25px;
+    padding:0;
+}
+.app-title-hightlight{
+    font-size:25px;
+    text-align:center;
+    background : #999;
+    margin : 0 10% ;
+    padding : 3px;
+    border-radius :7px;
+    color:#fff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -202,10 +285,9 @@ a.active {
     }
     ul.tab-nav {
         padding: 10px;
-        top: -4.25rem;
+        top: -4.5rem;
         min-width : 200px;
     }
-    
     .tab-nav li a{
         padding: 5px 20px;
         font-size: 22px;
@@ -234,6 +316,28 @@ a.active {
     .hidden-block {
         display: none;
     }
+    .tab-title {
+    font-size: 40px;
+    line-height: 27px;
+ }
+	.tab-title i {
+		font-size: 30px;
+	}
+
+
+	.tab-text_line {
+		font-size: 25px;
+		line-height: 22px;
+		padding: 5px 0;
+	}
+
+	.tab-desc {
+		font-family: k_light;
+		font-size: 20px;
+		line-height: 15px;
+		color: #555;
+		margin: 0 0 1%;
+	}
     .tab_center .tab-title p {
         width: 100%;
         font-size: 35px;
@@ -243,7 +347,7 @@ a.active {
         line-height: 30px;
     }
     .tab_center img {
-        width: 100%;
+        width: 100% !important;
         text-align: center;
     }
        .content_title_coll > input {
@@ -252,12 +356,16 @@ a.active {
     }
     .content_title_coll > label {
         display: block;
-        padding: 0.5em;
         text-align: right;
         color: #555;
     }
-    .content_title_coll > label:focus {
-        color: red;
+    .content_title_coll > label > i {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .page_tv .content_title_coll > label > i {
+        background: #000;
     }
     .content_title_coll h1{
         font-size: 24px;
@@ -266,18 +374,25 @@ a.active {
         font-size: 22px;
         line-height: 18px;
         margin: 0;
-    }
-
-   .content_title_coll p{
         color: #555;
     }
+
+   .page_tv .content_title_coll p,.page_tv .content_title_coll h1,.page_tv .content_title_coll i{
+        color:#fff;
+    }
     #expand {
-      height: 170px;
+      height: 250px;
       overflow: hidden;
-      transition: height 0.5s;
+      transition: height 0.25s;
       background: transparent;
       color: #FFF;
       padding: 0 20px;
+    }
+    .page_remote #expand {
+      height: 155px;  
+    }
+    .page_tv #expand {
+    background: black;
     }
     #toggle:checked ~ #expand {
       height: 0px;
@@ -291,9 +406,21 @@ a.active {
         padding-bottom: 12% !important;
     }
     .page_hub .content_img {
-        
     }
-
+    ul.tab-nav {
+        top: -3.0rem;
+        padding: 5px;
+        min-width: 160px;
+    }
+    ul.tab-nav a {
+        font-size: 18px;
+        padding: 3px 10px;
+    }
+    .tab_hub {
+        text-align : center;
+        background : inherit;
+        padding: 0 10px !important;
+    }
 
 }
 
@@ -327,9 +454,9 @@ a.active {
 }
 
 .tv_channel .page-main {
-    background: url("https://unsplash.it/1200/850?image=47") no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("../images/page-tv.jpg") no-repeat;
+    background-size: 105%;
+    background-position: center top;
 }
 
 .text_med {
@@ -399,10 +526,12 @@ a.active {
 }
 
 .channel_item {
-    width: 100%;
+    /* width: 100%; */
     display: inline-block;
     text-align: left;
     margin-bottom: .5em;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
 .channel-desc {
@@ -446,6 +575,9 @@ a.active {
         display: inline-block;
         width: 48% !important;
     }
+    .tab_hub {
+        padding: 7% 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -460,8 +592,40 @@ a.active {
     }
     .channel_item {
         text-align: center;
+        padding: 0;
     }
     .channel-desc {
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tab-col-2-l,.tab-col-2-r{
+        width: 100% !important;
+        display:inline-block;
+        vertical-align:top;
+        padding: 2% 5%;
+        box-sizing:border-box;
+    }
+    .tab-content{
+        width:100%;
+    }
+    .tab-content img{
+        width:100%;
+    }
+    .app-title{
+        font-size:23px;
+        padding:0;
+    }
+    .app-title-hightlight{
+        font-size:23px;
+        text-align:center;
+        background : #999;
+        margin : 0  ;
+        padding : 3px;
+        border-radius :7px;
+    }
+    .tab_tv {
+        padding: 3% 0;
     }
 }
