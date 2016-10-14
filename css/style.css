@@ -26,6 +26,12 @@ h1 {
 	margin: 0;
 }
 
+iframe{
+	width:100%;
+	padding : 10px;
+	box-sizing : border-box;
+}
+
 
 .nav_top {
     width: 100%;
@@ -42,11 +48,13 @@ h1 {
 	position: relative;
 	float: left;
 	height: 100%;
+	line-height: 50px;
 	padding: 0 5%;
 	max-width: 200px;
 }
 .nav_top-brand > h1 {
-	margin-top: 8px;
+	margin-bottom: 0;
+	color: #555;
 }
 .nav_top-btn {
 	position: relative;
@@ -83,13 +91,16 @@ h1 {
     height : 100%;
     transition : all 0.5s ease;
 }
-.nav_top-btn a:hover,a:focus {
-	font-family : k_bold;
+.nav_top-btn a:hover{
 	color : #000;
-}
-.nav_top-btn a:focus {
 	box-shadow: inset 0 -3px 0 0 #434343;
 }
+.nav_top-btn a.active{
+    color : #000;
+	box-shadow: inset 0 -3px 0 0 #434343;
+}
+
+
 .nav_top-btn .fa {
 	font-size : 13px;
 	margin-left: 3px;
@@ -146,14 +157,23 @@ h1 {
     padding: 2px 7px;
     border-radius: 3px;
     display: block;
-    float: left;
     margin-right: 10px;
     font-size: 20px;
+    float: left;
     transition: background-color 0.3s ease-out;
 }
+
+.btn-line {
+	text-align:center;
+}
+.btn-center {
+	position:relative;
+	left: 42.5%;
+}
+
 .btn{
-    display: inline-block;
     width: 100%;
+    text-align: center;
     top: 0;
 }
 .content_block button:hover{
@@ -242,6 +262,12 @@ h1 {
     font-family: k_light;
     line-height: 30px;
     margin: 10px 0;
+}
+.page_app .content_title p {
+     color:#fff; 
+}
+.page_app .content_title > h1 {
+     color:#fff; 
 }
 
 
@@ -339,7 +365,7 @@ h1 {
 	width: 15%;
 }
 .home_tvplus .content_block p{
-	margin : -15px 0 5px;
+	margin: 0;
 }
 .home_app {
     background: url('../images/h-bg-app.png');
@@ -401,8 +427,8 @@ h1 {
  }
  .page_app {
  	background: url(../images/page-app.jpg);
-    background-size: 100%;
-    background-position: center top;
+ 	background-size: 100%;
+ 	background-position: center 20%;
  }
  .page_app .content_img {
  	padding: 45% 0;
@@ -452,6 +478,16 @@ top: 47%;
 }
 .page_view .content_img{
 	padding: 65% 0;
+}
+.btn-blue{    
+	background: #5417e2 !important;    
+	color: #fff !important;    
+	border: 1px solid #5417e2 !important;
+}
+.btn-blue:hover{
+	background: #666 !important;
+	color: #fff !important;
+	border: 1px solid #666 !important;
 }
 
 
@@ -528,6 +564,14 @@ top: 47%;
     .sub_view {
     	height : 80px;
     }
+    .app-col-2 {
+    	width:50%;
+		display : inline-block;
+    }
+    .app-content{
+    	width : 100%;
+    	display : block;
+    }
 
 }
 
@@ -598,10 +642,12 @@ top: 47%;
 	.section_col_2-left .content_title {
 		position :absolute;
 		width: 80%;
-		padding: 3%;
 		z-index : 5;
 		height: auto;
-		bottom: 10px;
+		bottom: -50px;
+	}
+	.page_app .content_title{
+		bottom: 0px;
 	}
 	.section_col_2-left .content_block h1 {
     	font-size: 32px;
@@ -614,7 +660,6 @@ top: 47%;
         font-size: 20px;
         line-height: 18px;
         margin: 5px 0;
-        color: #fff;
     }
     .section_col_2-right .content_block h1 {
         font-size : 30px;
@@ -702,7 +747,7 @@ top: 47%;
 		background: inherit;
 	}
 	.page_hub .content_img {
-		height: 140px;
+		height: 120px;
 		padding: 10% 0;
 	}
 	.tv_channel .page-main {
@@ -722,15 +767,24 @@ top: 47%;
     	color : #fff;
     }
     .page_view .content_img {
-    	padding:70px 0;
+    	padding: 70px 0;
     }
     .page_view {
     	background-repeat : no-repeat;
-    	background-size : 150% ;
-    	background-position : 70% 80%;
+    	background-size: 180%;
+    	background-position: 60% top;
     }
     .page_view .content_title p {
 		color:#000;
     }
+    .page_app .content_img {
+    	padding: 90px 0;
+ }
+	.page_app {
+    	background-size : 150%;
+	}
+	.page_tv .content_title p{
+		color: #fff;
+	}
 
 }

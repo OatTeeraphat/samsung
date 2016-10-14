@@ -56,12 +56,9 @@
 }
 
 .tab_container div {
-    width: 100%;
-    padding: 5% 0;
 }
 
 .tab_container img {
-    margin: 10px 0;
     width: 50%;
 }
 
@@ -96,7 +93,6 @@ ul.tab-nav {
 
 a.active {
     font-family: k_bold !important;
-    border-left: 4px solid #000;
 }
 
 .tab-title {
@@ -125,6 +121,16 @@ a.active {
     margin: 0 0 1%;
 }
 
+.content-left{
+    text-align:left;
+    padding-top: 10% !important;
+}
+
+.content-left .tab-text_line{
+    font-size : 30px;
+}
+
+
 .owl-stage {
     /*width: 100% !important;*/
 }
@@ -134,25 +140,26 @@ a.active {
 }
 
 .tab_center img {
-    width: 30%;
+    width: 40% !important;
 }
 
 .tab_center p {text-align: center;}
 
 .owl-item .item {
     position: relative;
-    /*min-height: 500px;*/
+    max-height: 500px;
 }
 
 .owl-carousel .tab-title {
-    width: 48%;
     display: inline-block;
 }
 
 .owl-item .item img {
-    width: 48%;
     height: auto;
-    display: inline-block;
+    display: inline;
+}
+.owl-img_center{
+    width: 50% !important;
 }
 
 .owl-prev {
@@ -216,7 +223,7 @@ a.active {
 }
 
 .tab_hub {
-    padding: 7% 0 2%;
+    padding: 7% 0 3%;
     background: url('../images/tab-bg-hub.jpg');
     background-size: 120%;
     background-position: center top;
@@ -227,15 +234,49 @@ a.active {
     color:#000;
 }
 .tab_tv {
-    padding : 10% 0 3%;
-}
-.tab_hub {
-    padding : 10px;
+    padding: 7% 0 3%;
 }
 .tab_app {
     width: 100%;
     box-sizing: border-box;
-    display: table;
+}
+.tab-col-2-l{
+    width: 49% !important;
+    max-height: 500px;
+    display:inline-block;
+    vertical-align: top;
+    box-sizing:border-box;
+    padding: 3% 2% 3% 10%;
+}
+.tab-col-2-r{
+    width:49%;
+    display:inline-block;
+    vertical-align:top;
+    box-sizing:border-box;
+    padding: 3% 10% 5% 2%;
+}
+.tab-col-2-l,.tab-col-2-r{
+    padding-top :0;
+}
+.tab-content{
+    width: 100% !important;
+    padding: 0;
+}
+.tab-content img{
+    width:100%;
+}
+.app-title{
+    font-size:25px;
+    padding:0;
+}
+.app-title-hightlight{
+    font-size:25px;
+    text-align:center;
+    background : #999;
+    margin : 0 10% ;
+    padding : 3px;
+    border-radius :7px;
+    color:#fff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -306,7 +347,7 @@ a.active {
         line-height: 30px;
     }
     .tab_center img {
-        width: 100%;
+        width: 100% !important;
         text-align: center;
     }
        .content_title_coll > input {
@@ -315,12 +356,17 @@ a.active {
     }
     .content_title_coll > label {
         display: block;
-        padding: 0.5em;
         text-align: right;
         color: #555;
     }
-    .content_title_coll > label {
-}
+    .content_title_coll > label > i {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .page_tv .content_title_coll > label > i {
+        background: #000;
+    }
     .content_title_coll h1{
         font-size: 24px;
     }
@@ -328,18 +374,22 @@ a.active {
         font-size: 22px;
         line-height: 18px;
         margin: 0;
+        color: #555;
     }
 
-   .content_title_coll p{
-        color: #555;
+   .page_tv .content_title_coll p,.page_tv .content_title_coll h1,.page_tv .content_title_coll i{
+        color:#fff;
     }
     #expand {
       height: 250px;
       overflow: hidden;
-      transition: height 0.5s;
+      transition: height 0.25s;
       background: transparent;
       color: #FFF;
       padding: 0 20px;
+    }
+    .page_remote #expand {
+      height: 155px;  
     }
     .page_tv #expand {
     background: black;
@@ -542,8 +592,40 @@ a.active {
     }
     .channel_item {
         text-align: center;
+        padding: 0;
     }
     .channel-desc {
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tab-col-2-l,.tab-col-2-r{
+        width: 100% !important;
+        display:inline-block;
+        vertical-align:top;
+        padding: 2% 5%;
+        box-sizing:border-box;
+    }
+    .tab-content{
+        width:100%;
+    }
+    .tab-content img{
+        width:100%;
+    }
+    .app-title{
+        font-size:23px;
+        padding:0;
+    }
+    .app-title-hightlight{
+        font-size:23px;
+        text-align:center;
+        background : #999;
+        margin : 0  ;
+        padding : 3px;
+        border-radius :7px;
+    }
+    .tab_tv {
+        padding: 3% 0;
     }
 }
